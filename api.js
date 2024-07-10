@@ -1,6 +1,6 @@
 import { Network, Alchemy } from "alchemy-sdk";
 
-const settings = {
+export const settings = {
   apiKey: "mWZio9HFzNQNz2VhchGa6dbrrHABDBqA",
   network: Network.ETH_MAINNET,
 };
