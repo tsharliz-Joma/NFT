@@ -1,4 +1,4 @@
-import { Network, Alchemy } from "./alchemy-sdk";
+import { Network, Alchemy } from "./node_modules/alchemy-sdk";
 
 export const settings = {
   apiKey: process.env.API_KEY,
