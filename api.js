@@ -5,9 +5,9 @@ const settings = {
   network: Network.ETH_MAINNET,
 };
 
-const alchemy = new Alchemy(settings);
+export const alchemy = new Alchemy(settings);
 // Get all NFTs owner - async
-const gatherApiData = async (ownerAddy, limit) => {
+export const gatherApiData = async (ownerAddy, limit) => {
   try {
     const grabNfts = await alchemy.nft.getNftsForOwner(ownerAddy);
     const userOwnedNfts = grabNfts.ownedNfts;
@@ -21,4 +21,3 @@ const gatherApiData = async (ownerAddy, limit) => {
     console.error(error);
   }
 };
-
